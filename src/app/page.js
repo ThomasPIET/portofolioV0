@@ -9,15 +9,15 @@ import { ScrollTrigger } from 'gsap/all'
 const projects = [
   {
     title: 'Hasa Promotion', src: 'hasa.png',
-    color: "#CFD8DC", description: "Réalisation d'une one-page en attendant la version finaln du site "
+    color: "#CFD8DC", activity : "Design & Developpement", description: "Réalisation d'une one-page en attendant la version finaln du site "
   },
   {
     title: 'WebPiet Developpement', src: 'Rectangle_3.png',
-    color: "#C5E1A5", description: "Conception d'une maquette d'un site de tourisme"
+    color: "#C5E1A5", activity : "Design", description: "Conception d'une maquette d'un site de tourisme"
   },
   {
     title: 'WebPiet Developpement', src: 'Rectangle_4.png',
-    color: "#EFE8D3", description: "Développement d'une fonctionnalité pour un site de tourisme"
+    color: "#EFE8D3", activity : "Developpement", description: "Développement d'une fonctionnalité pour un site de tourisme"
   }
 ]
 
@@ -79,7 +79,7 @@ export default function Home() {
         <div className={styles.body}>
           {projects.map((project, index) => {
             return <Project index={index} title={project.title}
-                            setModal={setModal} key={index}/>
+                            setModal={setModal} activity={project.activity} key={index}/>
         })
       }
         </div>
