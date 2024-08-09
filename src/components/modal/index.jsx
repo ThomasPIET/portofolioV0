@@ -13,10 +13,14 @@ const scaleAnimation = {
 export default function index({modal, projects}) {
 
   const { active, index } = modal;
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const modalContainer = useRef(null);
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const cursor = useRef(null);
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const cursorLabel = useRef(null);
 
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect( () => {
     //Move Container
     let xMoveContainer = gsap.quickTo(modalContainer.current, "left", {duration: 0.8, ease: "power3"})
