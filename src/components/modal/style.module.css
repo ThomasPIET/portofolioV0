@@ -1,0 +1,46 @@
+.modalContainer {
+    height: 350px;
+    width: 500px;
+    position: absolute;
+    background-color: white;
+    overflow: hidden;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.modalSlider {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: top 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.modal {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.modal img {
+    height: 200px;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.modal p {
+    font-size: 18px;
+    text-align: center;
+    max-width: 80%;
+
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+

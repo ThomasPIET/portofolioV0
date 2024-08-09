@@ -1,0 +1,50 @@
+.containerHeader {
+    background: #9C9C9C;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    z-index: 100;
+    padding: 2rem 2rem;
+}
+
+.containerHeaderContact {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    z-index: 100;
+    padding: 2rem 2rem;
+}
+
+.headerLeft {
+    display: flex;
+    margin-left: 5px;
+    font-size: 1.1rem;
+}
+
+.headerRight {
+    display: flex;
+    margin-right: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.headerRightContact {
+    color: black;
+}
+
+.headerLink {
+    margin-right: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.headerLinkContact {
+    margin-right: 30px;
+    color: black;
+    text-decoration: none;}
+
+.headerLinkContact {
+    color: black;
+}
