@@ -19,6 +19,7 @@
 .formSection {
     flex: 2;
     margin-right: 2.5rem;
+    border: 1px solid blue;
 }
 
 .form {
@@ -49,7 +50,7 @@
     border: none;
     border-bottom: 1px solid #333;
     color: black;
-    font-size: 24px;
+    font-size: 20px;
     resize: none;
     background-color: transparent;
     transition: border-color 0.5s ease;
@@ -77,6 +78,32 @@
     color: #999;
 }
 
+.button{
+    width: 5rem;
+    padding: 0.625rem 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
 .contactInfo{
     flex: 2;
+    border : 1px solid green;
+    /*align-self: flex-end;*/
+    text-align: right;
+
+}
+
+.successMessage, .errorMessage {
+    margin-top: 20px;
+    font-size: 16px;
+    color: green;
+}
+
+.errorMessage {
+    color: red;
 }

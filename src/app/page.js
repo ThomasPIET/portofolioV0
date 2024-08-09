@@ -58,7 +58,6 @@ export default function Home() {
   return (
 
     <main className={styles.main}>
-
       <div className={styles.heroBanner}>
         {/*<Image src={`/images/img.png`}*/}
         {/*        width={300}*/}
@@ -72,7 +71,6 @@ export default function Home() {
             <p ref={firstText}>Thomas Piet -</p>
             <p ref={secondText}>Thomas Piet -</p>
           </div>
-
         </div>
       </div>
       <div className={styles.project}>
@@ -85,7 +83,6 @@ export default function Home() {
         </div>
         <Modal modal={modal} projects={projects}/>
       </div>
-
     </main>
 
   )
