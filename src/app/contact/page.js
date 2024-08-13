@@ -96,9 +96,9 @@ export default function Contact () {
           <div className={styles.contactItem}>
             <strong>Social Media:</strong>
             <ul className={styles.socialLinks}>
-              <li><a href="..." target="_blank"
+              <li><a href="https://www.linkedin.com/in/thomas-piet-615014155/" target="_blank"
                      rel="noopener noreferrer">LinkedIn</a></li>
-              <li><a href="..." target="_blank"
+              <li><a href="https://github.com/ThomasPIET" target="_blank"
                      rel="noopener noreferrer">GitHub</a></li>
             </ul>
           </div>
