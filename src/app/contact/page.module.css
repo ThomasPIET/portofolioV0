@@ -1,5 +1,5 @@
 .title {
-    font-weight: 250;
+    font-weight: 300; /* Use a standard font-weight */
     font-style: oblique;
     font-size: 100px;
     margin-left: 2rem;
@@ -13,13 +13,14 @@
     margin: 3rem 0;
     padding: 2rem;
     font-family: Arial, sans-serif;
-    border: 1px solid red;
 }
 
 .formSection {
     flex: 2;
     margin-right: 2.5rem;
-    border: 1px solid blue;
+    padding-right: 3rem;
+    padding-top: 1rem;
+    border-right: 1px solid #333;
 }
 
 .form {
@@ -78,7 +79,7 @@
     color: #999;
 }
 
-.button{
+.button {
     width: 5rem;
     padding: 0.625rem 0;
     border: none;
@@ -90,20 +91,71 @@
     align-self: flex-end;
 }
 
-.contactInfo{
-    flex: 2;
-    border : 1px solid green;
-    /*align-self: flex-end;*/
-    text-align: right;
-
-}
-
 .successMessage, .errorMessage {
     margin-top: 20px;
     font-size: 16px;
+}
+
+.successMessage {
     color: green;
 }
 
 .errorMessage {
     color: red;
+}
+
+.contactInfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-size: 16px;
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contactInfo h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+.contactItem {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.contactItem strong {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.contactItem p {
+    margin: 0;
+    color: #444;
+    line-height: 1.5;
+}
+
+.socialLinks {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.socialLinks li a {
+    color: #444;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.socialLinks li a:hover {
+    color: #0077b5;
 }

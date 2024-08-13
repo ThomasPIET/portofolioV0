@@ -1,6 +1,5 @@
 'use client'
 
-
 import React, { useState } from 'react'
 import styles from './page.module.css'
 
@@ -45,24 +44,21 @@ export default function Contact () {
 
   return (
     <main>
-      {/* eslint-disable-next-line react/no-unescaped-entities */}
       <div className={styles.title}>Let's talk about your project!</div>
       <div className={styles.container}>
         <div className={styles.formSection}>
           <form className={styles.form} onSubmit={handleContact}>
             <div className={styles.formGroup}>
               <input className={styles.input} type="text" id="name"
-                     placeholder="Your name" required  value={name}
+                     placeholder="Your name" required value={name}
                      onChange={(e) => setName(e.target.value)}/>
-              {/* eslint-disable-next-line react/no-unescaped-entities */}
               <label className={styles.label} htmlFor="name">What's your
                 name?</label>
             </div>
             <div className={styles.formGroup}>
               <input className={styles.input} type="email" id="email"
-                     placeholder="mail@mail.com" required  value={email}
+                     placeholder="mail@mail.com" required value={email}
                      onChange={(e) => setEmail(e.target.value)}/>
-              {/* eslint-disable-next-line react/no-unescaped-entities */}
               <label className={styles.label} htmlFor="email">What's your
                 email?</label>
             </div>
@@ -71,10 +67,12 @@ export default function Contact () {
                         placeholder="Hello Thomas, can you help me with ..."
                         required value={message}
                         onChange={(e) => setMessage(e.target.value)}></textarea>
-              <label className={styles.label} htmlFor="message">Your message</label>
+              <label className={styles.label} htmlFor="message">Your
+                message</label>
             </div>
             {isSubmitted && (
-              <div className={styles.successMessage}>Email sent successfully!</div>
+              <div className={styles.successMessage}>Email sent
+                successfully!</div>
             )}
             {error && (
               <div className={styles.errorMessage}>{error}</div>
@@ -83,12 +81,27 @@ export default function Contact () {
           </form>
         </div>
         <div className={styles.contactInfo}>
-          <p>Contact info</p>
-          <p> @ : thomaspiet@outlook.fr</p>
-          <p> linkedin : </p>
+          <h3>Contact info</h3>
+          <div className={styles.contactItem}>
+            <strong>Email:</strong>
+            <p>thomaspiet@outlook.fr</p>
+          </div>
+          <div className={styles.contactItem}>
+            <strong>Location:</strong>
+            <p>Toulouse, France<br/>Ynov Toulouse Campus</p>
+          </div>
+          <div className={styles.contactItem}>
+            <strong>Social Media:</strong>
+            <ul className={styles.socialLinks}>
+              <li><a href="..." target="_blank"
+                     rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="..." target="_blank"
+                     rel="noopener noreferrer">GitHub</a></li>
+            </ul>
+          </div>
         </div>
+
       </div>
     </main>
-
   )
 }
