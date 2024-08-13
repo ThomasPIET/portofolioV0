@@ -44,6 +44,7 @@ export default function Contact () {
 
   return (
     <main>
+      {/* eslint-disable-next-line react/no-unescaped-entities */}
       <div className={styles.title}>Let's talk about your project!</div>
       <div className={styles.container}>
         <div className={styles.formSection}>
@@ -52,6 +53,7 @@ export default function Contact () {
               <input className={styles.input} type="text" id="name"
                      placeholder="Your name" required value={name}
                      onChange={(e) => setName(e.target.value)}/>
+              {/* eslint-disable-next-line react/no-unescaped-entities */}
               <label className={styles.label} htmlFor="name">What's your
                 name?</label>
             </div>
@@ -59,6 +61,7 @@ export default function Contact () {
               <input className={styles.input} type="email" id="email"
                      placeholder="mail@mail.com" required value={email}
                      onChange={(e) => setEmail(e.target.value)}/>
+              {/* eslint-disable-next-line react/no-unescaped-entities */}
               <label className={styles.label} htmlFor="email">What's your
                 email?</label>
             </div>
