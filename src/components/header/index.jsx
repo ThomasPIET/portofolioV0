@@ -6,7 +6,7 @@ import styles from './style.module.css';
 
 export default function Header() {
   const pathname = usePathname();
-  const isContactPage = pathname === '/contact';
+  const isContactPage = pathname === '/contact' || pathname === '/about';
 
   return (
     <div className={isContactPage ? styles.containerHeaderContact : styles.containerHeader}>
