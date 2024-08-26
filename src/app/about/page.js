@@ -44,8 +44,10 @@ export default function About() {
         <p>Email: thomaspiet@outlook.fr</p>
         <p>Location: Toulouse, France - Ynov Toulouse Campus</p>
         <div className={styles.socialLinks}>
-          <a href="#" className={styles.socialLink}>LinkedIn</a>
-          <a href="#" className={styles.socialLink}>GitHub</a>
+          <a href="https://www.linkedin.com/in/thomas-piet-615014155/" target="_blank"
+             rel="noopener noreferrer" className={styles.socialLink}>LinkedIn</a>
+          <a href="https://github.com/ThomasPIET" target="_blank"
+             rel="noopener noreferrer" className={styles.socialLink}>GitHub</a>
         </div>
       </section>
     </div>
